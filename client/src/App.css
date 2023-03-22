@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Lobster&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+  *::-webkit-scrollbar {
+      display: none;
+  }
+
+
+  @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      inherit {
+          opacity: 1;
+      }
+  }
+
+  @keyframes glow {
+    from {
+    text-shadow: 0 0 1.2vh rgb(255, 132, 132);
+    }
+    to {
+    text-shadow: 0 0 1.4vh rgb(255, 124, 255);
+    }
+    to {
+    text-shadow: 0 0 1.4vh rgb(0, 0, 255);
+    }
+    to {
+    text-shadow: 0 0 1.4vh rgb(126, 255, 255);
+    }
+    to {
+    text-shadow: 0 0 1.4vh rgb(255, 255, 130);
+    }
+    to {
+    text-shadow: 0 0 1.2vh rgb(128, 255, 128);
+    }
+  }
+
+  html{
+    /* background */
+    background-image: 
+    linear-gradient(
+    to bottom right, 
+    rgb(49, 79, 201), 
+    
+    rgba(255, 255, 255, 0.615), 
+
+    rgba(27, 51, 111, 0.8));
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    /* size */
+    width: 100vw;
+    height: 100vh;
+  }
+
+h1, h2, h3, h4, h5{
+  font-family: Aclonica;
+  color: rgba(182, 186, 199, 0.9);
+}
+h1{
+  background-color: rgba(22, 65, 186, 0.9);
+  color: rgba(101, 164, 223, 0.9);
+  border-radius: 2vh;
+}
+h3{
+  background-color: rgba(130, 145, 188, 0.9);
+  color: rgba(12, 89, 28, 0.9);
+  border-radius: 2vh;
+}
+body{
+  background-color: rgb(255, 192, 203, 0);
+  width: 100vw;
+  height: 99vh;
+}
+
+main{
+  /* background */
+  background-color: rgb(128, 0, 128, 0);
+  /* sizing */
+  height: 81vh;
+  max-height: 81vh;
+  width: 99vw;
+  overflow-y: scroll;
+  /* margin padding */
+  margin: 0 auto;
+  /* flex */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  /* scroll */
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* extra */
+  animation: fadeInAnimation ease 7s;
+}
+
+main > div {
+  background-color: rgba(0, 0, 0, 0.667);
+  color: rgb(255, 255, 255);
+  /* sizing */
+  height: 79vh;
+  max-height: 79vh;
+  width: max-content;
+  max-width: max-content;
+  height: max-content;
+  /* border and padding */
+  border-radius: 3vh;
+  padding: 1vh;
+  margin: 1vh;
+  /* scroll */
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  font-family: Aclonica;
+  text-decoration: none;
+  margin: 0.5vh;
+}
+
+
+form{
+  width: 30vw;
+}
+
+
+.edit {
+  display: block;
+  margin: 1vh auto;
+  transition-duration: 0.4s;
+  /* background */
+  background-color: rgba(253, 253, 253, 0.802);
+  /* border padding */
+  border: 0.15vh rgba(0, 3, 194, 0.8) solid;
+  border-radius: 1vh;
+  padding: 0.5vh 2.5vh 0.5vh 2.5vh;
+  /* font */
+  font-size: 2vh;
+  font-family: Aclonica;
+  color: rgba(0, 4, 255, 0.389) ;
+  text-decoration: none;
+}
+.edit2{
+  /* background and border */
+  background-color: rgba(240, 248, 255, 0.6);
+  border: none;
+  border-radius: 2vh;
+  outline: none;
+  /* size */
+  width: 100%;
+  padding: 1vh 2vh;
+  margin: 1vh 0;
+  resize: none;
+  /* font */
+  font-family: "Barlow Condensed";
+  font-size: 2vh;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+  button:hover {
+      transform: translateY(-0.25vh);
+  }
+
+  input, select, textarea, select:focus{
+    /* background and border */
+    background-color: rgba(240, 248, 255, 0.6);
+    border: none;
+    border-radius: 2vh;
+    outline: none;
+    /* size */
+    width: 100%;
+    padding: 1vh 2vh;
+    margin: 1vh 0;
+    resize: none;
+    /* font */
+    font-family: "Barlow Condensed";
+    font-size: 2vh;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  nav{
+    background-color: rgba(46, 0, 198, 0.4);
+    color: rgb(0, 0, 0);
+    margin: 1vh auto;
+    border-radius: 8vh;
+    font-size: 2vh;
+    padding: 1vh;
+    animation: fadeInAnimation ease 2s, glow 6s ease-in-out infinite alternate;
+  } 
+
+  iframe {
+    display: block;
+    filter: opacity(0.5);
+    animation: fadeInAnimation ease 7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .artemis {
+    display: block;
+  margin: 1vh auto;
+  transition-duration: 0.4s;
+  /* background */
+  background-color: rgba(0, 136, 255, 0.444);
+  /* border padding */
+  border: 0.15vh rgba(0, 3, 194, 0.8) solid;
+  border-radius: 1vh;
+  padding: 0.5vh 2.5vh 0.5vh 2.5vh;
+  /* font */
+  font-size: 2vh;
+  font-family: Aclonica;
+  color: rgba(0, 4, 255, 0.389) ;
+  text-decoration: none;
+  }
+
+  header{
+    font-size: 40px;
+  }
